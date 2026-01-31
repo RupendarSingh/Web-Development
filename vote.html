@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote predictor</title>
+</head>
+<body>
+    <h1>Vote Validator</h1>
+    <input type="text" placeholder="Enter your name" id="name">
+    <input type="number" name="" id="age" placeholder="Age">
+    <button onclick="vote()">Submit</button>
+    <p id="ans">You will get the answer here</p>
+
+    <script>
+        function vote(){
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var ans = document.getElementById("ans");
+        //     alert("Hello")
+        //     alert("Bolo")
+        if (age>=18){
+            // alert("Hello")
+            ans.innerHTML = name+""+ "You are Eligible"
+        } else{
+            // alert("Bolo")
+            ans.innerHTML = name+""+ "You are still a child"
+        }
+        }
+    </script>
+    <a href="cal.html">Love Calculator</a>
+</body>
+</html>

@@ -1,14 +1,14 @@
 let count = 0;
 
-function increase() {
-    count++;
-    document.getElementById('count').innerText = count;
-}
+    function increase() {
+        count++;
+        document.getElementById('count').innerText = count;
+    }
 
-function decrease() {
-    count--;
-    document.querySelector('account').innerText = count;
-}
+    function decrease() {
+        count--;
+        document.getElementById('count').innerText = count;
+    }
 
 function changebg() {
     let r = Math.trunc(Math.random() * 256);
